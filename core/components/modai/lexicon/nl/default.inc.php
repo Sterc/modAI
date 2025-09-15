@@ -92,7 +92,7 @@ $_lang['modai.admin.agent_context_provider.remove'] = 'Context Provider Ontkoppe
 $_lang['modai.admin.agent_context_provider.view'] = 'Context Provider Bekijken';
 $_lang['modai.admin.agent_context_provider.remove_confirm'] = 'Weet je zeker dat je "[[+name]]" context provider wilt ontkoppelen van deze agent?';
 
-$_lang['modai.admin.related_agent.agents'] = 'Agenten';
+$_lang['modai.admin.related_agent.agents'] = 'Agents';
 $_lang['modai.admin.related_agent.create'] = 'Agent Toewijzen';
 $_lang['modai.admin.related_agent.view'] = 'Agent Bekijken';
 $_lang['modai.admin.related_agent.remove'] = 'Agent Ontkoppelen';
