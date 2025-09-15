@@ -170,17 +170,17 @@ export const buildSidebar = () => {
         {
           name: 'public',
           icon: globe,
-          label: 'Show Public Chats',
+          label: lng('modai.ui.show_public_chats'),
         },
         {
           name: 'my',
           icon: user,
-          label: 'Show My Chats',
+          label: lng('modai.ui.show_my_chats'),
         },
         {
           name: 'private',
           icon: lock,
-          label: 'Show Private Chats',
+          label: lng('modai.ui.show_private_chats'),
         },
       ] as const,
       defaultState: 'public',

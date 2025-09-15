@@ -78,6 +78,9 @@ $_lang['modai.ui.chat_make_public_desc'] = 'Weet je zeker dat je chat: "[[+title
 $_lang['modai.ui.select_chat'] = 'Chat Selecteren: [[+title]]';
 $_lang['modai.ui.chat_search'] = 'Chats Zoeken';
 $_lang['modai.ui.no_chats'] = 'Geen chats gevonden.';
+$_lang['modai.ui.show_my_chats'] = 'Toon Mijn Chats';
+$_lang['modai.ui.show_public_chats'] = 'Toon Openbare Chats';
+$_lang['modai.ui.show_private_chats'] = 'Toon Privé Chats';
 
 $_lang['modai.error.failed'] = 'Mislukt';
 $_lang['modai.error.failed_request'] = 'Verwerken van je aanvraag is mislukt.';
