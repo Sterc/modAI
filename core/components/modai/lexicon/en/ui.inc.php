@@ -78,6 +78,9 @@ $_lang['modai.ui.chat_make_public_desc'] = 'Are you sure you want to make chat: 
 $_lang['modai.ui.select_chat'] = 'Select Chat: [[+title]]';
 $_lang['modai.ui.chat_search'] = 'Search Chats';
 $_lang['modai.ui.no_chats'] = 'No chats found.';
+$_lang['modai.ui.show_my_chats'] = 'Show My Chats';
+$_lang['modai.ui.show_public_chats'] = 'Show Public Chats';
+$_lang['modai.ui.show_private_chats'] = 'Show Private Chats';
 
 $_lang['modai.error.failed'] = 'Failed';
 $_lang['modai.error.failed_request'] = 'Failed to process your request.';
