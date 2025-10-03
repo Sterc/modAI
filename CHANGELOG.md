@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.14.0-pl - 2025-09-30
+
+### 🚀 Features
+
+- Chats in DB ([b5e22bb](https://github.com/modxcms/modAI/commit/b5e22bb4dedfa6445df8bcaa860c14f5e2a44cae))
+- Update ToolInterface::__constructor signature & add clear_cache config to resource/elements tools ([f2d2ac4](https://github.com/modxcms/modAI/commit/f2d2ac4642a1f072cf742492d516a4e9c7299292))
+
+### ⚙️ Miscellaneous Tasks
+
+- Update default models to 5-mini and 5-nano ([be5c6f9](https://github.com/modxcms/modAI/commit/be5c6f9b69f59962d9dd03f6d03f66a41fff63b5))
+- Add nl lexicons ([45a98bb](https://github.com/modxcms/modAI/commit/45a98bb0e80e6cbae680fb2362a5d9faf9bea02f))
+
 ## 0.13.1-pl - 2025-07-18
 
 ### 🚀 Features

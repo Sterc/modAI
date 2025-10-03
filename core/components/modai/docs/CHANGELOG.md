@@ -2,14 +2,11 @@
 
 This is a shortened version, [view full Changelog here](https://github.com/modxcms/modAI/blob/main/CHANGELOG.md).
 
-## 0.13.1-pl - 2025-07-18
+## 0.14.0-pl - 2025-10-03
 
 ### Features
 
-- Add  to the tool's getParameters and getPrompt methods as an argument ([931d4e1](https://github.com/modxcms/modAI/commit/931d4e1354cf1fe592acb3a5089b40c93cd61447))
-
-### Bug Fixes
-
-- Fix format for vision endpoint for OpenAI ([4827e6c](https://github.com/modxcms/modAI/commit/4827e6c9e2e9452d1da31fd936bcf81d171db90d))
+- Chats in DB ([b5e22bb](https://github.com/modxcms/modAI/commit/b5e22bb4dedfa6445df8bcaa860c14f5e2a44cae))
+- Update ToolInterface::__constructor signature & add clear_cache config to resource/elements tools ([f2d2ac4](https://github.com/modxcms/modAI/commit/f2d2ac4642a1f072cf742492d516a4e9c7299292))
 
 
