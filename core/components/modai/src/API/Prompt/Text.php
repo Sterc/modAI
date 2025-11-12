@@ -18,6 +18,8 @@ class Text extends API
 
     public function post(ServerRequestInterface $request): void
     {
+        $contextKey = null;
+        
         if (!$this->modx->hasPermission('modai_client_text')) {
             throw APIException::unauthorized();
         }
@@ -60,7 +62,7 @@ class Text extends API
             if (!$resource) {
                 throw new LexiconException('modai.error.no_resource_found');
             }
-
+            $contextKey = $resource->get('context_key');
             $content = $resource->getContent();
 
             if (empty($content)) {
@@ -71,13 +73,13 @@ class Text extends API
         $systemInstructions = [];
 
         $stream = intval(Settings::getTextSetting($this->modx, $field, 'stream', $namespace)) === 1;
-        $model = Settings::getTextSetting($this->modx, $field, 'model', $namespace);
-        $temperature = (float)Settings::getTextSetting($this->modx, $field, 'temperature', $namespace);
-        $maxTokens = (int)Settings::getTextSetting($this->modx, $field, 'max_tokens', $namespace);
-        $output = Settings::getTextSetting($this->modx, $field, 'base_output', $namespace, false);
-        $base = Settings::getTextSetting($this->modx, $field, 'base_prompt', $namespace, false);
-        $fieldPrompt = Settings::getTextSetting($this->modx, $field, 'prompt', $namespace);
-        $customOptions = Settings::getTextSetting($this->modx, $field, 'custom_options', $namespace, false);
+        $model = Settings::getTextSetting($this->modx, $field, 'model', $namespace, true, $contextKey);
+        $temperature = (float)Settings::getTextSetting($this->modx, $field, 'temperature', $namespace , true, $contextKey);
+        $maxTokens = (int)Settings::getTextSetting($this->modx, $field, 'max_tokens', $namespace, true, $contextKey);
+        $output = Settings::getTextSetting($this->modx, $field, 'base_output', $namespace, false, $contextKey);
+        $base = Settings::getTextSetting($this->modx, $field, 'base_prompt', $namespace, false, $contextKey);
+        $fieldPrompt = Settings::getTextSetting($this->modx, $field, 'prompt', $namespace, true, $contextKey);
+        $customOptions = Settings::getTextSetting($this->modx, $field, 'custom_options', $namespace, false, $contextKey);
 
         if (!empty($output)) {
             $systemInstructions[] = $output;
